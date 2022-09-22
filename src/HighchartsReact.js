@@ -89,5 +89,6 @@ const HighchartsReact = forwardRef(
     return <div { ...props.containerProps } ref={ containerRef } />;
   }
 );
-
-export default memo(HighchartsReact);
+const HighchartsReactMemo = memo(HighchartsReact)
+HighchartsReactMemo.displayName = 'HighchartsReact'
+export default HighchartsReactMemo;
